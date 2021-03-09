@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopingList.Logic", "ShopingList.Logic\ShopingList.Logic.csproj", "{3DF705BB-6618-4433-B584-FA8A7B55641D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopingList", "ShopingList\ShopingList.csproj", "{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonToObject", "JsonToObject\JsonToObject.csproj", "{B3D36BAC-F655-4B76-B897-8708362FE351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3DF705BB-6618-4433-B584-FA8A7B55641D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DF705BB-6618-4433-B584-FA8A7B55641D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DF705BB-6618-4433-B584-FA8A7B55641D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DF705BB-6618-4433-B584-FA8A7B55641D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3D36BAC-F655-4B76-B897-8708362FE351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3D36BAC-F655-4B76-B897-8708362FE351}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3D36BAC-F655-4B76-B897-8708362FE351}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3D36BAC-F655-4B76-B897-8708362FE351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
-﻿using ShopingList.Logic.Data;
-using ShopingList.Logic.Model;
+﻿using ShopingList.Data;
+using ShopingList.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

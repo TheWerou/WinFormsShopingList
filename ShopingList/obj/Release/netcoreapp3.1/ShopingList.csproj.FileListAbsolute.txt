@@ -1,0 +1,17 @@
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.exe
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.deps.json
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.runtimeconfig.json
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.runtimeconfig.dev.json
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.dll
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\ShopingList.pdb
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.csprojAssemblyReference.cache
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.Form1.resources
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.csproj.GenerateResource.cache
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.AssemblyInfoInputs.cache
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.AssemblyInfo.cs
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.csproj.CoreCompileInputs.cache
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.csproj.CopyComplete
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.dll
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.pdb
+C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList\obj\Release\netcoreapp3.1\ShopingList.genruntimeconfig.cache

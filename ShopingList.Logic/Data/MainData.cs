@@ -44,6 +44,11 @@ namespace ShopingList.Logic.Data
             }
         }
 
+        public void SaveToJsonFile()
+        {
+
+        }
+
 
     }
     
