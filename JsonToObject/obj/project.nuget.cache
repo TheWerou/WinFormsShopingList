@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2l0EFaN057HvYvLT6Rc3PuM5Sli3WP0KqSniKgVxyaxZODM/bPYVIsSlhV+uasadVOQ7uIEGb0Ltdo32v8/jcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wojte\\Desktop\\Programowanie\\ZPK\\ProjectZPK\\JsonToObject\\JsonToObject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wojte\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

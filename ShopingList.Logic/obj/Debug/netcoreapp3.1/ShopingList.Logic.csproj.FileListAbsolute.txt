@@ -1,0 +1,9 @@
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\bin\Debug\netcoreapp3.1\ShopingList.Logic.deps.json
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\bin\Debug\netcoreapp3.1\ShopingList.Logic.dll
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\bin\Debug\netcoreapp3.1\ShopingList.Logic.pdb
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.csprojAssemblyReference.cache
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.AssemblyInfoInputs.cache
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.AssemblyInfo.cs
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.csproj.CoreCompileInputs.cache
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.dll
+C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\ShopingList.Logic\obj\Debug\netcoreapp3.1\ShopingList.Logic.pdb
