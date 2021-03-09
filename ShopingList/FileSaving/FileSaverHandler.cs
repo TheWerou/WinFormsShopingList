@@ -11,6 +11,7 @@ namespace ShopingList
         {
             try
             {
+                path += ".json";
                 File.WriteAllText(path, textToSave);
                 return true;
             }

@@ -363,3 +363,5 @@ FodyWeavers.xsd
 .vs
 ShopingList/bin
 ShopingList/obj
+obj/Debug/netcoreapp3.1
+obj

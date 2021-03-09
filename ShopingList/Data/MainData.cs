@@ -3,16 +3,20 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Reflection;
+using System.IO;
 
 namespace ShopingList.Data
 {
     public class MainData
     {
+        private ZapisPlikowFacde SavingFacade;
         public List<ListOfProducts> SotrageOfProductList { get; private set; }
 
         public MainData()
         {
             SotrageOfProductList = new List<ListOfProducts>();
+            SavingFacade = new ZapisPlikowFacde();
         }
 
         public ListOfProducts AddProductList(string name, string description)
@@ -44,7 +48,19 @@ namespace ShopingList.Data
             }
         }
 
-        public void SaveToJsonFile()
+        public void SaveToJsonFile(string nameOfFile)
+        {
+            string input = Path.Combine(Environment.CurrentDirectory, nameOfFile);
+            this.SavingFacade.SaveObjectToFile(this.SotrageOfProductList, input);
+        }
+
+        public void SaveToJsonFile(string path, string nameOfFile)
+        {
+            string input = Path.Combine(Environment.CurrentDirectory, nameOfFile);
+            this.SavingFacade.SaveObjectToFile(this.SotrageOfProductList, input);
+        }
+
+        public void ReadFromFile()
         {
 
         }
