@@ -1,9 +1,0 @@
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\bin\Debug\netcoreapp3.1\JsonToObject.deps.json
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\bin\Debug\netcoreapp3.1\JsonToObject.dll
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\bin\Debug\netcoreapp3.1\JsonToObject.pdb
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.csprojAssemblyReference.cache
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.AssemblyInfoInputs.cache
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.AssemblyInfo.cs
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.csproj.CoreCompileInputs.cache
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.dll
-C:\Users\wojte\Desktop\Programowanie\Komponenty_zapisLIB\JsonToObject\obj\Debug\netcoreapp3.1\JsonToObject.pdb

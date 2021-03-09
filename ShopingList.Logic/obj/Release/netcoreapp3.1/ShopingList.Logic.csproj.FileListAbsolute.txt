@@ -1,9 +1,0 @@
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\bin\Release\netcoreapp3.1\ShopingList.Logic.deps.json
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\bin\Release\netcoreapp3.1\ShopingList.Logic.dll
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\bin\Release\netcoreapp3.1\ShopingList.Logic.pdb
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.csprojAssemblyReference.cache
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.AssemblyInfoInputs.cache
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.AssemblyInfo.cs
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.csproj.CoreCompileInputs.cache
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.dll
-C:\Users\wojte\Desktop\Programowanie\ZPK\ProjectZPK\ShopingList.Logic\obj\Release\netcoreapp3.1\ShopingList.Logic.pdb
