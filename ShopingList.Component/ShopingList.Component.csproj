@@ -49,10 +49,15 @@
     <Compile Include="Data\MainData.cs" />
     <Compile Include="Data\Model\ListOfProducts.cs" />
     <Compile Include="Data\Model\ShopingElement.cs" />
-    <Compile Include="FileSaving\FileSaverHandler.cs" />
-    <Compile Include="FileSaving\IZapisPlikowFacade.cs" />
-    <Compile Include="FileSaving\ZapisPlikowFacde.cs" />
+    <Compile Include="FileSaver\FileSaverHandler.cs" />
+    <Compile Include="FileSaver\IZapisPlikowFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FileSaver\ZapisPlikowFacde.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ZPKcomponentcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,9 +70,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ZPKcomponentcs.resx">
       <DependentUpon>ZPKcomponentcs.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

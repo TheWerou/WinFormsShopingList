@@ -22,7 +22,7 @@ namespace ShopingList.Component
 
         }
 
-        public static string? ReadFromFile(string path)
+        public static string ReadFromFile(string path)
         {
             try
             {

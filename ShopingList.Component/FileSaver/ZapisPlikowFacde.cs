@@ -58,7 +58,7 @@ namespace ShopingList.Component
             SaveToFile(pathToSave, output);
         }
 
-        public string? ReadFromFile(string path)
+        public string ReadFromFile(string path)
         {
             return FileSaverHandler.ReadFromFile(path);
         }
