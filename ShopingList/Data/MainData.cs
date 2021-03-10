@@ -5,12 +5,13 @@ using System.Text;
 using System.Linq;
 using System.Reflection;
 using System.IO;
+using ShopingList.FileSaving;
 
 namespace ShopingList.Data
 {
     public class MainData
     {
-        private ZapisPlikowFacde SavingFacade;
+        private IZapisPlikowFacade SavingFacade;
         public List<ListOfProducts> SotrageOfProductList { get; private set; }
 
         public MainData()

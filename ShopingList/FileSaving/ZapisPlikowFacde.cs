@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ShopingList.FileSaving;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace ShopingList
 {
-    public class ZapisPlikowFacde
+    public class ZapisPlikowFacde : IZapisPlikowFacade
     {
         public string path { get; set; }
 
