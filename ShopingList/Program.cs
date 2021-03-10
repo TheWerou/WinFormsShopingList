@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace ShopingList
 {
-    class Program 
+    class Program : Component
     {
         /// <summary>
         ///  The main entry point for the application.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShopingList.FileSaving
+namespace ShopingList.Compt
 {
     public interface IZapisPlikowFacade
     {

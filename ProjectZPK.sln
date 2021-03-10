@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopingList", "ShopingList\ShopingList.csproj", "{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C} = {295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopingList.Component", "ShopingList.Component\ShopingList.Component.csproj", "{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingList.Compt", "ShopingList.Compt\ShopingList.Compt.csproj", "{F41C2B4E-A799-4144-B4F3-2F23DC8676FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D715F8B-964C-4FBC-9642-5E2EB6A991E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{295ED7C5-2E8D-4901-AF2D-35A8A3A0550C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F41C2B4E-A799-4144-B4F3-2F23DC8676FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41C2B4E-A799-4144-B4F3-2F23DC8676FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41C2B4E-A799-4144-B4F3-2F23DC8676FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41C2B4E-A799-4144-B4F3-2F23DC8676FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

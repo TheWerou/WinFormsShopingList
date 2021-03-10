@@ -1,13 +1,12 @@
-﻿using ShopingList.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShopingList.Data
+namespace ShopingList.Compt
 {
     public interface IMainData
     {
-
+        public List<ListOfProducts> StorageOfProductList { get; set; }
         public ListOfProducts AddProductList(string name, string description);
 
         public void AddProductList(ListOfProducts newList);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShopingList.Model
+namespace ShopingList.Compt
 {
     public class ShopingElement
     {

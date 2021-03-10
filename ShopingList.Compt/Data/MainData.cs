@@ -1,46 +1,44 @@
-﻿using ShopingList.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Reflection;
 using System.IO;
-using ShopingList.FileSaving;
 
-namespace ShopingList.Data
+namespace ShopingList.Compt
 {
-    public class MainData
+    public class MainData : IMainData
     {
         private IZapisPlikowFacade SavingFacade;
-        public List<ListOfProducts> SotrageOfProductList { get; private set; }
+        public List<ListOfProducts> StorageOfProductList { get; set; }
 
         public MainData()
         {
-            SotrageOfProductList = new List<ListOfProducts>();
+            StorageOfProductList = new List<ListOfProducts>();
             SavingFacade = new ZapisPlikowFacde();
         }
 
         public ListOfProducts AddProductList(string name, string description)
         {
             var newList = new ListOfProducts(name, description);
-            SotrageOfProductList.Add(newList);
+            StorageOfProductList.Add(newList);
             return newList;
         }
 
         public void AddProductList(ListOfProducts newList)
         {
-            SotrageOfProductList.Add(newList);
+            StorageOfProductList.Add(newList);
         }
         public void DeleteProductList(ListOfProducts listToDelete)
         {
-            SotrageOfProductList.Remove(listToDelete);
+            StorageOfProductList.Remove(listToDelete);
         }
         public bool EditProductList(ListOfProducts listToDelete)
         {
-            var output = SotrageOfProductList.FindIndex(c => c == listToDelete);
+            var output = StorageOfProductList.FindIndex(c => c == listToDelete);
             if(output > 0)
             {
-                SotrageOfProductList[output] = listToDelete;
+                StorageOfProductList[output] = listToDelete;
                 return true;
             }
             else
@@ -52,13 +50,13 @@ namespace ShopingList.Data
         public void SaveToJsonFile(string nameOfFile)
         {
             string input = Path.Combine(Environment.CurrentDirectory, nameOfFile);
-            this.SavingFacade.SaveObjectToFile(this.SotrageOfProductList, input);
+            this.SavingFacade.SaveObjectToFile(this.StorageOfProductList, input);
         }
 
         public void SaveToJsonFile(string path, string nameOfFile)
         {
             string input = Path.Combine(Environment.CurrentDirectory, nameOfFile);
-            this.SavingFacade.SaveObjectToFile(this.SotrageOfProductList, input);
+            this.SavingFacade.SaveObjectToFile(this.StorageOfProductList, input);
         }
 
         public void ReadFromFile()
