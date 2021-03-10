@@ -59,6 +59,11 @@ namespace ShopingList.Component
             this.SavingFacade.SaveObjectToFile(this.StorageOfProductList, input);
         }
 
+        public string PrepToSave(string nameOfFile)
+        {
+            return Path.Combine(Environment.CurrentDirectory, nameOfFile);
+        }
+
         public void ReadFromFile()
         {
 

@@ -35,7 +35,7 @@ namespace ShopingList
             // zpKcomponentcs1
             // 
             this.zpKcomponentcs1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(67)))), ((int)(((byte)(147)))));
-            this.zpKcomponentcs1.Location = new System.Drawing.Point(7, 44);
+            this.zpKcomponentcs1.Location = new System.Drawing.Point(22, 22);
             this.zpKcomponentcs1.Name = "zpKcomponentcs1";
             this.zpKcomponentcs1.Size = new System.Drawing.Size(1166, 600);
             this.zpKcomponentcs1.TabIndex = 0;

@@ -48,8 +48,7 @@ namespace ShopingList.Component
             this.ListProd.Items.Clear();
             foreach (var item in listOfProducts.ListOfProduct)
             {
-                this.ListProd.Items.Add($"Nazwa {item.Name}");
-                
+                this.ListProd.Items.Add($"Nazwa {item.Name} Category: {item.Category}");
             }
         }
 
@@ -123,6 +122,20 @@ namespace ShopingList.Component
 
         private void DecryptionOutput_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void SaveList_Click(object sender, EventArgs e)
+        {
+            this.SaverData.Title = "Mojplik.txt";
+            this.SaverData.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            this.SaverData.ShowDialog();
+            
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            var jsonToSave = this.mainData.PrepToSave("Przykladowy.txt");
 
         }
     }

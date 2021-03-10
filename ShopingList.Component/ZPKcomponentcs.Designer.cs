@@ -51,6 +51,7 @@ namespace ShopingList.Component
             this.CategryList = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.SaverData = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // ListProd
@@ -211,6 +212,7 @@ namespace ShopingList.Component
             this.SaveList.TabIndex = 24;
             this.SaveList.Text = "Zapisz listy do pliku";
             this.SaveList.UseVisualStyleBackColor = true;
+            this.SaveList.Click += new System.EventHandler(this.SaveList_Click);
             // 
             // LoadList
             // 
@@ -257,6 +259,10 @@ namespace ShopingList.Component
             this.richTextBox2.Size = new System.Drawing.Size(218, 110);
             this.richTextBox2.TabIndex = 29;
             this.richTextBox2.Text = "Tu będa komunikaty";
+            // 
+            // SaverData
+            // 
+            this.SaverData.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // ZPKcomponentcs
             // 
@@ -317,5 +323,6 @@ namespace ShopingList.Component
         private System.Windows.Forms.ListBox CategryList;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.SaveFileDialog SaverData;
     }
 }

@@ -20,5 +20,7 @@ namespace ShopingList.Component
         void SaveToJsonFile(string path, string nameOfFile);
 
         void ReadFromFile();
+
+        string PrepToSave(string nameOfFile);
     }
 }
