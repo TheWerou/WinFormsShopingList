@@ -139,8 +139,40 @@ namespace ShopingList.Component
 
             using (StreamWriter writetext = new StreamWriter(this.SaverData.FileName))
             {
-                writetext.WriteLine(jsonToSave);
+                foreach(var item in jsonToSave)
+                {
+                    writetext.WriteLine(item);
+                }
+
             }
+        }
+
+        private void LoadList_Click(object sender, EventArgs e)
+        {
+            if (this.LoadDataDail.ShowDialog() == DialogResult.OK)
+            {
+                string objectInJson;
+                var list = new List<string>();
+                using (var readtext = new StreamReader(this.LoadDataDail.FileName))
+                {
+                    while (!readtext.EndOfStream)
+                    {
+                        list.Add(readtext.ReadLine());
+                    }
+                    
+                }
+                this.mainData.ReadFromFile(list);
+                UpdateListList();
+            }
+            else
+            {
+                this.Komunikat.Text = "nie pyklo";
+            }
+        }
+        private void LoaderData_FileOk(object sender, CancelEventArgs e)
+        {
+            
+
         }
     }
 }

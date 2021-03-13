@@ -19,8 +19,8 @@ namespace ShopingList.Component
 
         void SaveToJsonFile(string path, string nameOfFile);
 
-        void ReadFromFile();
+        void ReadFromFile(IEnumerable<string> jsonObjects);
 
-        string PrepToSave();
+        IEnumerable<string> PrepToSave();
     }
 }

@@ -59,14 +59,24 @@ namespace ShopingList.Component
             this.SavingFacade.SaveObjectToFile(this.StorageOfProductList, input);
         }
 
-        public void ReadFromFile()
+        public void ReadFromFile(IEnumerable<string> jsonObjects)
         {
+            foreach(var item in jsonObjects)
+            {
+                this.StorageOfProductList.Add(this.SavingFacade.ConvertJsonToObject<ListOfProducts>(item));
+            }
 
         }
 
-        public string PrepToSave()
+        public IEnumerable<string> PrepToSave()
         {
-            return this.SavingFacade.ConvertObjectToJson(StorageOfProductList);
+            var list = new List<string>();
+
+            foreach (var item in this.StorageOfProductList)
+            {
+                list.Add(this.SavingFacade.ConvertObjectToJson(item));
+            }
+            return list;
         }
 
     }

@@ -50,8 +50,9 @@ namespace ShopingList.Component
             this.DescriptionText = new System.Windows.Forms.RichTextBox();
             this.CategryList = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.Komunikat = new System.Windows.Forms.RichTextBox();
             this.SaverData = new System.Windows.Forms.SaveFileDialog();
+            this.LoadDataDail = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // ListProd
@@ -222,6 +223,7 @@ namespace ShopingList.Component
             this.LoadList.TabIndex = 25;
             this.LoadList.Text = "Wczytaj listy";
             this.LoadList.UseVisualStyleBackColor = true;
+            this.LoadList.Click += new System.EventHandler(this.LoadList_Click);
             // 
             // DescriptionText
             // 
@@ -253,13 +255,13 @@ namespace ShopingList.Component
             this.label6.TabIndex = 28;
             this.label6.Text = "Wybierz by posortować";
             // 
-            // richTextBox2
+            // Komunikat
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(593, 335);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(218, 110);
-            this.richTextBox2.TabIndex = 29;
-            this.richTextBox2.Text = "Tu będa komunikaty";
+            this.Komunikat.Location = new System.Drawing.Point(593, 335);
+            this.Komunikat.Name = "Komunikat";
+            this.Komunikat.Size = new System.Drawing.Size(218, 110);
+            this.Komunikat.TabIndex = 29;
+            this.Komunikat.Text = "Tu będa komunikaty";
             // 
             // SaverData
             // 
@@ -268,12 +270,16 @@ namespace ShopingList.Component
             this.SaverData.Title = "Zapisz liste list";
             this.SaverData.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
+            // LoadDataDail
+            // 
+            this.LoadDataDail.FileName = "openFileDialog1";
+            // 
             // ZPKcomponentcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(67)))), ((int)(((byte)(147)))));
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.Komunikat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.CategryList);
             this.Controls.Add(this.DescriptionText);
@@ -326,7 +332,8 @@ namespace ShopingList.Component
         private System.Windows.Forms.RichTextBox DescriptionText;
         private System.Windows.Forms.ListBox CategryList;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox Komunikat;
         private System.Windows.Forms.SaveFileDialog SaverData;
+        private System.Windows.Forms.OpenFileDialog LoadDataDail;
     }
 }
