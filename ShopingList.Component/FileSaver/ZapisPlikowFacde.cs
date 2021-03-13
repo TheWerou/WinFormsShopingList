@@ -10,26 +10,26 @@ namespace ShopingList.Component
     {
         public string path { get; set; }
 
-        private string ConvertObjectToJson(Object objectToSerialize)
+        public string ConvertObjectToJson(Object objectToSerialize)
         {
             return JsonConvert.SerializeObject(objectToSerialize);
         }
 
-        private string ConvertObjectToJson(IEnumerable<Object> listToSave)
+        public string ConvertObjectToJson(IEnumerable<Object> listToSave)
         {
             return JsonConvert.SerializeObject(listToSave);
         }
 
-        private T ConvertJsonToObject<T>(string stringToDeserialize)
+        public T ConvertJsonToObject<T>(string stringToDeserialize)
         {
             return JsonConvert.DeserializeObject<T>(stringToDeserialize);
         }
 
-        private IEnumerable<T> ConvertListOfJsonToObject<T>(string stringToDeserialize)
+        public IEnumerable<T> ConvertListOfJsonToObject<T>(string stringToDeserialize)
         {
             return JsonConvert.DeserializeObject<IEnumerable<T>>(stringToDeserialize);
         }
-        private void SaveToFile(string path, string textToSave)
+        public void SaveToFile(string path, string textToSave)
         {
             FileSaverHandler.SaveToFile(path, textToSave);
         }

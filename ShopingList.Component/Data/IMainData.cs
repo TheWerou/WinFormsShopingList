@@ -21,6 +21,6 @@ namespace ShopingList.Component
 
         void ReadFromFile();
 
-        string PrepToSave(string nameOfFile);
+        string PrepToSave();
     }
 }

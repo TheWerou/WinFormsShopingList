@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -127,16 +129,18 @@ namespace ShopingList.Component
 
         private void SaveList_Click(object sender, EventArgs e)
         {
-            this.SaverData.Title = "Mojplik.txt";
-            this.SaverData.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             this.SaverData.ShowDialog();
             
         }
 
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            var jsonToSave = this.mainData.PrepToSave("Przykladowy.txt");
+            var jsonToSave = this.mainData.PrepToSave();
 
+            using (StreamWriter writetext = new StreamWriter(this.SaverData.FileName))
+            {
+                writetext.WriteLine(jsonToSave);
+            }
         }
     }
 }

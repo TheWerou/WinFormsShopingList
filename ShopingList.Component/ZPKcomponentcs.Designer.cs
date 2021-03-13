@@ -236,7 +236,8 @@ namespace ShopingList.Component
             this.CategryList.FormattingEnabled = true;
             this.CategryList.ItemHeight = 16;
             this.CategryList.Items.AddRange(new object[] {
-            "Lista kategori"});
+            "Lista kategori po klikniecu mozna ",
+            "je sortowąć (Do zrobienia)"});
             this.CategryList.Location = new System.Drawing.Point(592, 121);
             this.CategryList.Name = "CategryList";
             this.CategryList.Size = new System.Drawing.Size(220, 116);
@@ -262,6 +263,9 @@ namespace ShopingList.Component
             // 
             // SaverData
             // 
+            this.SaverData.FileName = "ListaZakupow.txt";
+            this.SaverData.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            this.SaverData.Title = "Zapisz liste list";
             this.SaverData.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // ZPKcomponentcs

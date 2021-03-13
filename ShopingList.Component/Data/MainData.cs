@@ -14,8 +14,8 @@ namespace ShopingList.Component
 
         public MainData()
         {
-            StorageOfProductList = new List<ListOfProducts>();
-            SavingFacade = new ZapisPlikowFacde();
+            this.StorageOfProductList = new List<ListOfProducts>();
+            this.SavingFacade = new ZapisPlikowFacde();
         }
 
         public ListOfProducts AddProductList(string name, string description)
@@ -59,16 +59,15 @@ namespace ShopingList.Component
             this.SavingFacade.SaveObjectToFile(this.StorageOfProductList, input);
         }
 
-        public string PrepToSave(string nameOfFile)
-        {
-            return Path.Combine(Environment.CurrentDirectory, nameOfFile);
-        }
-
         public void ReadFromFile()
         {
 
         }
 
+        public string PrepToSave()
+        {
+            return this.SavingFacade.ConvertObjectToJson(StorageOfProductList);
+        }
 
     }
     
