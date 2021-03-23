@@ -55,12 +55,22 @@ namespace ShopingList
         {
             List<Color> colors = new List<Color> { Color.Red, Color.Green, Color.Blue, Color.Yellow, Color.Orange, Color.Gray };
             var random = new Random();
+            var helper = this.zpKcomponentcs1.BackColor;
             int index = random.Next(colors.Count);
             if(this.zpKcomponentcs1.BackColor == colors[index])
             {
                 colors.RemoveAt(index);
             }
-            this.zpKcomponentcs1.BackColor = colors[index];
+            try
+            {
+                helper = this.zpKcomponentcs1.BackColor;
+                this.zpKcomponentcs1.BackColor = colors[index];
+            }
+            catch(ArgumentOutOfRangeException)
+            {
+                this.zpKcomponentcs1.BackColor = helper;
+            }
+            
         }
     }
 }
