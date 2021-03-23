@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Data\IMainData.cs" />
     <Compile Include="Data\MainData.cs" />
+    <Compile Include="Data\Model\Language.cs" />
     <Compile Include="Data\Model\ListOfProducts.cs" />
     <Compile Include="Data\Model\ShopingElement.cs" />
     <Compile Include="FileSaver\FileSaverHandler.cs" />

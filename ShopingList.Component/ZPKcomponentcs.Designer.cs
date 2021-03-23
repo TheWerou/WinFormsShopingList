@@ -53,33 +53,51 @@ namespace ShopingList.Component
             this.Komunikat = new System.Windows.Forms.RichTextBox();
             this.SaverData = new System.Windows.Forms.SaveFileDialog();
             this.LoadDataDail = new System.Windows.Forms.OpenFileDialog();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ListProd
             // 
+            this.ListProd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ListProd.FormattingEnabled = true;
-            this.ListProd.Location = new System.Drawing.Point(19, 121);
+            this.ListProd.Location = new System.Drawing.Point(2, 53);
+            this.ListProd.Margin = new System.Windows.Forms.Padding(2);
             this.ListProd.Name = "ListProd";
-            this.ListProd.Size = new System.Drawing.Size(567, 326);
+            this.ListProd.Size = new System.Drawing.Size(427, 330);
             this.ListProd.TabIndex = 0;
             // 
             // ListList
             // 
+            this.ListList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ListList.FormattingEnabled = true;
-            this.ListList.ItemHeight = 20;
-            this.ListList.Location = new System.Drawing.Point(818, 121);
+            this.ListList.ItemHeight = 17;
+            this.ListList.Location = new System.Drawing.Point(217, 2);
+            this.ListList.Margin = new System.Windows.Forms.Padding(2);
             this.ListList.Name = "ListList";
-            this.ListList.Size = new System.Drawing.Size(314, 324);
+            this.ListList.Size = new System.Drawing.Size(212, 381);
             this.ListList.TabIndex = 1;
             this.ListList.SelectedIndexChanged += new System.EventHandler(this.ListList_SelectedIndexChanged);
             // 
             // DeleteBut
             // 
-            this.DeleteBut.Location = new System.Drawing.Point(19, 494);
+            this.DeleteBut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DeleteBut.Location = new System.Drawing.Point(2, 34);
+            this.DeleteBut.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteBut.Name = "DeleteBut";
-            this.DeleteBut.Size = new System.Drawing.Size(221, 34);
+            this.DeleteBut.Size = new System.Drawing.Size(139, 28);
             this.DeleteBut.TabIndex = 2;
             this.DeleteBut.Text = "Usuń przedmiot";
             this.DeleteBut.UseVisualStyleBackColor = true;
@@ -87,9 +105,11 @@ namespace ShopingList.Component
             // 
             // DeleteButList
             // 
-            this.DeleteButList.Location = new System.Drawing.Point(909, 495);
+            this.DeleteButList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DeleteButList.Location = new System.Drawing.Point(288, 34);
+            this.DeleteButList.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButList.Name = "DeleteButList";
-            this.DeleteButList.Size = new System.Drawing.Size(223, 34);
+            this.DeleteButList.Size = new System.Drawing.Size(141, 28);
             this.DeleteButList.TabIndex = 3;
             this.DeleteButList.Text = "Usuń liste zakupów";
             this.DeleteButList.UseVisualStyleBackColor = true;
@@ -97,48 +117,60 @@ namespace ShopingList.Component
             // 
             // ProgresBarr
             // 
-            this.ProgresBarr.Location = new System.Drawing.Point(19, 82);
+            this.ProgresBarr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ProgresBarr.Location = new System.Drawing.Point(2, 22);
+            this.ProgresBarr.Margin = new System.Windows.Forms.Padding(2);
             this.ProgresBarr.Name = "ProgresBarr";
-            this.ProgresBarr.Size = new System.Drawing.Size(567, 33);
+            this.ProgresBarr.Size = new System.Drawing.Size(427, 27);
             this.ProgresBarr.TabIndex = 4;
             // 
             // NameProdInput
             // 
+            this.NameProdInput.Dock = System.Windows.Forms.DockStyle.Top;
             this.NameProdInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NameProdInput.Location = new System.Drawing.Point(365, 456);
+            this.NameProdInput.Location = new System.Drawing.Point(288, 2);
+            this.NameProdInput.Margin = new System.Windows.Forms.Padding(2);
             this.NameProdInput.Name = "NameProdInput";
-            this.NameProdInput.Size = new System.Drawing.Size(222, 34);
+            this.NameProdInput.Size = new System.Drawing.Size(141, 28);
             this.NameProdInput.TabIndex = 5;
             // 
             // CategoryInput
             // 
+            this.CategoryInput.Dock = System.Windows.Forms.DockStyle.Top;
             this.CategoryInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CategoryInput.Location = new System.Drawing.Point(364, 494);
+            this.CategoryInput.Location = new System.Drawing.Point(288, 34);
+            this.CategoryInput.Margin = new System.Windows.Forms.Padding(2);
             this.CategoryInput.Name = "CategoryInput";
-            this.CategoryInput.Size = new System.Drawing.Size(222, 34);
+            this.CategoryInput.Size = new System.Drawing.Size(141, 28);
             this.CategoryInput.TabIndex = 6;
             // 
             // NameListInput
             // 
+            this.NameListInput.Dock = System.Windows.Forms.DockStyle.Top;
             this.NameListInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.NameListInput.Location = new System.Drawing.Point(593, 456);
+            this.NameListInput.Location = new System.Drawing.Point(2, 2);
+            this.NameListInput.Margin = new System.Windows.Forms.Padding(2);
             this.NameListInput.Name = "NameListInput";
-            this.NameListInput.Size = new System.Drawing.Size(222, 34);
+            this.NameListInput.Size = new System.Drawing.Size(139, 28);
             this.NameListInput.TabIndex = 7;
             // 
             // DescryptionInput
             // 
+            this.DescryptionInput.Dock = System.Windows.Forms.DockStyle.Top;
             this.DescryptionInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DescryptionInput.Location = new System.Drawing.Point(593, 496);
+            this.DescryptionInput.Location = new System.Drawing.Point(2, 34);
+            this.DescryptionInput.Margin = new System.Windows.Forms.Padding(2);
             this.DescryptionInput.Name = "DescryptionInput";
-            this.DescryptionInput.Size = new System.Drawing.Size(222, 34);
+            this.DescryptionInput.Size = new System.Drawing.Size(139, 28);
             this.DescryptionInput.TabIndex = 8;
             // 
             // AddProduktButton
             // 
-            this.AddProduktButton.Location = new System.Drawing.Point(19, 456);
+            this.AddProduktButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddProduktButton.Location = new System.Drawing.Point(2, 2);
+            this.AddProduktButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddProduktButton.Name = "AddProduktButton";
-            this.AddProduktButton.Size = new System.Drawing.Size(222, 34);
+            this.AddProduktButton.Size = new System.Drawing.Size(139, 28);
             this.AddProduktButton.TabIndex = 9;
             this.AddProduktButton.Text = "Dodaj przedmiot";
             this.AddProduktButton.UseVisualStyleBackColor = true;
@@ -146,9 +178,11 @@ namespace ShopingList.Component
             // 
             // AddListaButt
             // 
-            this.AddListaButt.Location = new System.Drawing.Point(910, 456);
+            this.AddListaButt.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddListaButt.Location = new System.Drawing.Point(288, 2);
+            this.AddListaButt.Margin = new System.Windows.Forms.Padding(2);
             this.AddListaButt.Name = "AddListaButt";
-            this.AddListaButt.Size = new System.Drawing.Size(222, 34);
+            this.AddListaButt.Size = new System.Drawing.Size(141, 28);
             this.AddListaButt.TabIndex = 10;
             this.AddListaButt.Text = "Dodaj Liste";
             this.AddListaButt.UseVisualStyleBackColor = true;
@@ -157,59 +191,71 @@ namespace ShopingList.Component
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(246, 494);
+            this.label1.Location = new System.Drawing.Point(145, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 29);
+            this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Kategoria";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(246, 461);
+            this.label2.Location = new System.Drawing.Point(145, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 29);
+            this.label2.Size = new System.Drawing.Size(139, 24);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nazwa";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(821, 495);
+            this.label3.Location = new System.Drawing.Point(145, 32);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 29);
+            this.label3.Size = new System.Drawing.Size(139, 24);
             this.label3.TabIndex = 13;
             this.label3.Text = "Opis";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(821, 459);
+            this.label4.Location = new System.Drawing.Point(145, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 29);
+            this.label4.Size = new System.Drawing.Size(139, 24);
             this.label4.TabIndex = 14;
             this.label4.Text = "Nazwa";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(20, 50);
+            this.label5.Location = new System.Drawing.Point(2, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 25);
+            this.label5.Size = new System.Drawing.Size(427, 20);
             this.label5.TabIndex = 23;
             this.label5.Text = "Postęp listy";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // SaveList
             // 
-            this.SaveList.Location = new System.Drawing.Point(593, 534);
+            this.SaveList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SaveList.Location = new System.Drawing.Point(439, 461);
+            this.SaveList.Margin = new System.Windows.Forms.Padding(2);
             this.SaveList.Name = "SaveList";
-            this.SaveList.Size = new System.Drawing.Size(539, 31);
+            this.SaveList.Size = new System.Drawing.Size(433, 25);
             this.SaveList.TabIndex = 24;
             this.SaveList.Text = "Zapisz listy do pliku";
             this.SaveList.UseVisualStyleBackColor = true;
@@ -217,9 +263,11 @@ namespace ShopingList.Component
             // 
             // LoadList
             // 
-            this.LoadList.Location = new System.Drawing.Point(19, 534);
+            this.LoadList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LoadList.Location = new System.Drawing.Point(2, 461);
+            this.LoadList.Margin = new System.Windows.Forms.Padding(2);
             this.LoadList.Name = "LoadList";
-            this.LoadList.Size = new System.Drawing.Size(568, 31);
+            this.LoadList.Size = new System.Drawing.Size(433, 25);
             this.LoadList.TabIndex = 25;
             this.LoadList.Text = "Wczytaj listy";
             this.LoadList.UseVisualStyleBackColor = true;
@@ -227,39 +275,46 @@ namespace ShopingList.Component
             // 
             // DescriptionText
             // 
-            this.DescriptionText.Location = new System.Drawing.Point(592, 243);
+            this.DescriptionText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DescriptionText.Location = new System.Drawing.Point(2, 141);
+            this.DescriptionText.Margin = new System.Windows.Forms.Padding(2);
             this.DescriptionText.Name = "DescriptionText";
-            this.DescriptionText.Size = new System.Drawing.Size(219, 86);
+            this.DescriptionText.Size = new System.Drawing.Size(205, 115);
             this.DescriptionText.TabIndex = 26;
             this.DescriptionText.Text = "Opis: Listy ( Work in progres ) ";
             // 
             // CategryList
             // 
+            this.CategryList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CategryList.FormattingEnabled = true;
-            this.CategryList.ItemHeight = 16;
             this.CategryList.Items.AddRange(new object[] {
             "Lista kategori po klikniecu mozna ",
             "je sortowąć (Do zrobienia)"});
-            this.CategryList.Location = new System.Drawing.Point(592, 121);
+            this.CategryList.Location = new System.Drawing.Point(2, 22);
+            this.CategryList.Margin = new System.Windows.Forms.Padding(2);
             this.CategryList.Name = "CategryList";
-            this.CategryList.Size = new System.Drawing.Size(220, 116);
+            this.CategryList.Size = new System.Drawing.Size(205, 115);
             this.CategryList.TabIndex = 27;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(592, 89);
+            this.label6.Location = new System.Drawing.Point(2, 0);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(215, 25);
+            this.label6.Size = new System.Drawing.Size(205, 20);
             this.label6.TabIndex = 28;
             this.label6.Text = "Wybierz by posortować";
             // 
             // Komunikat
             // 
-            this.Komunikat.Location = new System.Drawing.Point(593, 335);
+            this.Komunikat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Komunikat.Location = new System.Drawing.Point(2, 260);
+            this.Komunikat.Margin = new System.Windows.Forms.Padding(2);
             this.Komunikat.Name = "Komunikat";
-            this.Komunikat.Size = new System.Drawing.Size(218, 110);
+            this.Komunikat.Size = new System.Drawing.Size(205, 117);
             this.Komunikat.TabIndex = 29;
             this.Komunikat.Text = "Tu będa komunikaty";
             // 
@@ -274,38 +329,141 @@ namespace ShopingList.Component
             // 
             this.LoadDataDail.FileName = "openFileDialog1";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LoadList, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.SaveList, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(874, 488);
+            this.tableLayoutPanel1.TabIndex = 30;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.ListList, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(440, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(431, 385);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.Komunikat, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.CategryList, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.DescriptionText, 0, 2);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 4;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(209, 379);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.Controls.Add(this.AddProduktButton, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.NameProdInput, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.DeleteBut, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.CategoryInput, 2, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 394);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(431, 62);
+            this.tableLayoutPanel4.TabIndex = 2;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel5.Controls.Add(this.NameListInput, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label4, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.AddListaButt, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.DescryptionInput, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label3, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.DeleteButList, 2, 1);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(440, 394);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(431, 62);
+            this.tableLayoutPanel5.TabIndex = 3;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.ListProd, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.ProgresBarr, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(431, 385);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
             // ZPKcomponentcs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(67)))), ((int)(((byte)(147)))));
-            this.Controls.Add(this.Komunikat);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.CategryList);
-            this.Controls.Add(this.DescriptionText);
-            this.Controls.Add(this.LoadList);
-            this.Controls.Add(this.SaveList);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.AddListaButt);
-            this.Controls.Add(this.AddProduktButton);
-            this.Controls.Add(this.DescryptionInput);
-            this.Controls.Add(this.NameListInput);
-            this.Controls.Add(this.CategoryInput);
-            this.Controls.Add(this.NameProdInput);
-            this.Controls.Add(this.ProgresBarr);
-            this.Controls.Add(this.DeleteButList);
-            this.Controls.Add(this.DeleteBut);
-            this.Controls.Add(this.ListList);
-            this.Controls.Add(this.ListProd);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ZPKcomponentcs";
-            this.Size = new System.Drawing.Size(1166, 600);
+            this.Size = new System.Drawing.Size(874, 488);
             this.Load += new System.EventHandler(this.ZPKcomponentcs_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -335,5 +493,11 @@ namespace ShopingList.Component
         private System.Windows.Forms.RichTextBox Komunikat;
         private System.Windows.Forms.SaveFileDialog SaverData;
         private System.Windows.Forms.OpenFileDialog LoadDataDail;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

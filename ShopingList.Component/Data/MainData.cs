@@ -4,6 +4,7 @@ using System.Text;
 using System.Linq;
 using System.Reflection;
 using System.IO;
+using ShopingList.Component.Data.Model;
 
 namespace ShopingList.Component
 {
@@ -11,11 +12,48 @@ namespace ShopingList.Component
     {
         private IZapisPlikowFacade SavingFacade;
         public List<ListOfProducts> StorageOfProductList { get; set; }
+        public Language lang { get; set; }
 
         public MainData()
         {
+            SetUp();
+            DefaultLanguage();
+        }
+
+        public MainData(Language lang)
+        {
+            SetUp();
+            this.lang = lang;
+        }
+
+        private void SetUp()
+        {
             this.StorageOfProductList = new List<ListOfProducts>();
             this.SavingFacade = new ZapisPlikowFacde();
+        }
+
+        public Language DefaultLanguage()
+        {
+            this.lang = PolishText();
+            return this.lang;
+        }
+
+        private Language PolishText()
+        {
+            var lang = new Language();
+            lang.Progress_label = "Postępy listy";
+            lang.Select_label = "Wybierz by posortować";
+            lang.Thing_name_label = "Nazwa";
+            lang.Thing_category_label = "Kategoria";
+            lang.List_name_label = "Nazwa";
+            lang.List_description_label = "Opis";
+            lang.Thing_add_btn = "Dodaj przedmiot";
+            lang.Thing_del_btn = "Usuń przedmiot";
+            lang.List_add_btn = "Dodaj listę";
+            lang.List_del_btn = "Usuń listę";
+            lang.Load_list_btn = "Wczytaj listy";
+            lang.Save_list_btn = "Zapisz listy do pliku";
+            return lang;
         }
 
         public ListOfProducts AddProductList(string name, string description)

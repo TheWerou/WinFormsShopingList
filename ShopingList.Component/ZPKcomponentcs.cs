@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ShopingList.Component.Data.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +16,26 @@ namespace ShopingList.Component
     public partial class ZPKcomponentcs : UserControl
     {
         private IMainData mainData;
+        private Language lang;
 
         public ZPKcomponentcs()
         {
             InitializeComponent();
             this.mainData = new MainData();
+            this.lang = this.mainData.lang;
+            Rewrite_Language();
+        }
+
+        public void Change_Language(Language lang)
+        {
+            this.lang = lang;
+            Rewrite_Language();
+        }
+
+        public void Default_Language()
+        {
+            this.lang = this.mainData.DefaultLanguage();
+            Rewrite_Language();
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -173,6 +189,21 @@ namespace ShopingList.Component
         {
             
 
+        }
+        private void Rewrite_Language()
+        {
+            label5.Text = lang.Progress_label;
+            label6.Text = lang.Select_label;
+            label2.Text = lang.Thing_name_label;
+            label1.Text = lang.Thing_category_label;
+            label4.Text = lang.List_name_label;
+            label3.Text = lang.List_description_label;
+            AddProduktButton.Text = lang.Thing_add_btn;
+            DeleteBut.Text = lang.Thing_del_btn;
+            AddListaButt.Text = lang.List_add_btn;
+            DeleteButList.Text = lang.List_del_btn;
+            LoadList.Text = lang.Load_list_btn;
+            SaveList.Text = lang.Save_list_btn;
         }
     }
 }
