@@ -129,7 +129,15 @@ namespace ShopingList.Component
                 this.mainData.DeleteProductList(listToDelete);
             }
             UpdateListList();
-            UpdateProductList(this.mainData.StorageOfProductList[0]);
+            try
+            {
+                UpdateProductList(this.mainData.StorageOfProductList[0]);
+            }
+            catch(Exception)
+            {
+                this.ListProd.Items.Clear();
+            }
+            
 
         }
 
