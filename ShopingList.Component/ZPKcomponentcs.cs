@@ -17,6 +17,8 @@ namespace ShopingList.Component
     {
         private IMainData mainData;
         private Language lang;
+        private ShopingElement viewElement;
+        private int itemPosition;
 
         public ZPKcomponentcs()
         {
@@ -66,7 +68,7 @@ namespace ShopingList.Component
             this.ListProd.Items.Clear();
             foreach (var item in listOfProducts.ListOfProduct)
             {
-                this.ListProd.Items.Add($"Nazwa {item.Name} Category: {item.Category}");
+                this.ListProd.Items.Add($"Nazwa {item.Name} Category: {item.Category}", item.isChecked);
             }
         }
 
@@ -212,6 +214,52 @@ namespace ShopingList.Component
             DeleteButList.Text = lang.List_del_btn;
             LoadList.Text = lang.Load_list_btn;
             SaveList.Text = lang.Save_list_btn;
+        }
+
+
+        public ShopingElement GetNextElement()
+        {
+
+            try
+            {
+                var output = this.ListList.SelectedIndex;
+                var item = this.mainData.StorageOfProductList[output].ListOfProduct.FindIndex(c => c.isChecked == false);
+                this.itemPosition = item;
+                this.viewElement = this.mainData.StorageOfProductList[output].ListOfProduct[item];
+                RefreshListProd();
+                return this.viewElement;
+            }
+            catch(Exception)
+            {
+                return this.viewElement;
+            }
+
+        }
+        private void RefreshListProd()
+        {
+            try
+            {
+                UpdateProductList(this.mainData.StorageOfProductList[0]);
+            }
+            catch (Exception)
+            {
+                this.ListProd.Items.Clear();
+            }
+        }
+
+        public ShopingElement AccepctElement()
+        { 
+            this.mainData.StorageOfProductList[this.ListList.SelectedIndex].ListOfProduct[this.itemPosition].isChecked = true;
+            
+            try
+            {
+                UpdateProductList(this.mainData.StorageOfProductList[0]);
+            }
+            catch (Exception)
+            {
+                this.ListProd.Items.Clear();
+            }
+            return GetNextElement();
         }
     }
 }

@@ -72,5 +72,26 @@ namespace ShopingList
             }
             
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var objectToShow = this.zpKcomponentcs1.GetNextElement();
+            this.NameOfElemnt.Text = objectToShow.Name;
+            this.CategoryOfElement.Text = objectToShow.Category;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var objectToShow = this.zpKcomponentcs1.AccepctElement();
+            this.NameOfElemnt.Text = objectToShow.Name;
+            this.CategoryOfElement.Text = objectToShow.Category;
+
+        }
     }
 }
