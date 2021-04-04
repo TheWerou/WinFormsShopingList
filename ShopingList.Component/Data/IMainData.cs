@@ -26,6 +26,8 @@ namespace ShopingList.Component
 
         void ReadFromFile(IEnumerable<string> jsonObjects);
 
+        List<string> GetAllCategory();
+
         IEnumerable<string> PrepToSave();
     }
 }

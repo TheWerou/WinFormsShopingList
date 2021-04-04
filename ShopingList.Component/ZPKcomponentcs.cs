@@ -26,6 +26,8 @@ namespace ShopingList.Component
             this.mainData = new MainData();
             this.lang = this.mainData.lang;
             Rewrite_Language();
+            this.Komunikat.Text = "Miłego dnia";
+            this.DescriptionText.Text = "Tu pokaże się opis twojej cudownej listy";
         }
 
         public void Change_Language(Language lang)
@@ -60,7 +62,9 @@ namespace ShopingList.Component
             var name = this.NameListInput.Text;
             var description = this.DescryptionInput.Text;
             this.mainData.AddProductList(name, description);
+
             UpdateListList();
+            this.Komunikat.Text = "Dodano listę";
         }
 
         private void UpdateProductList(ListOfProducts listOfProducts)
@@ -72,9 +76,17 @@ namespace ShopingList.Component
             }
         }
 
+        private void UpdateListOfCategory(List<string> listOfCategories)
+        {
+            this.CategryList.Items.Clear();
+            foreach (var item in listOfCategories)
+            {
+                this.CategryList.Items.Add($" {item} ");
+            }
+        }
+
         private void UpdateListList()
         {
-
             this.ListList.Items.Clear();
             foreach (var item in this.mainData.StorageOfProductList)
             {
@@ -88,7 +100,9 @@ namespace ShopingList.Component
             if (output >= 0)
             {
                 UpdateProductList(this.mainData.StorageOfProductList[output]);
+                this.DescriptionText.Text = this.mainData.StorageOfProductList[output].Description;
             }
+            this.Komunikat.Text = "Wybrano nowy element";
         }
 
         private void AddProduktButton_Click(object sender, EventArgs e)
@@ -101,8 +115,10 @@ namespace ShopingList.Component
                 this.mainData.StorageOfProductList[output].AddToProductToList(name,category);
                 UpdateProductList(this.mainData.StorageOfProductList[output]);
             }
-            
 
+            var listOfCategories = this.mainData.GetAllCategory();
+            UpdateListOfCategory(listOfCategories);
+            this.Komunikat.Text = "Dodano produkt do listy";
         }
 
         private void DeleteBut_Click(object sender, EventArgs e)
@@ -115,11 +131,11 @@ namespace ShopingList.Component
                 {
                     var listFromDelete = this.mainData.StorageOfProductList[output];
                     listFromDelete.DeleteProductFromList(listFromDelete.ListOfProduct[output2]);
-
                 }
-                
             }
             UpdateProductList(this.mainData.StorageOfProductList[output]);
+
+            this.Komunikat.Text = "Usunięto produkt z listy";
         }
 
         private void DeleteButList_Click(object sender, EventArgs e)
@@ -139,7 +155,7 @@ namespace ShopingList.Component
             {
                 this.ListProd.Items.Clear();
             }
-            
+            this.Komunikat.Text = "Usunięto liste";
 
         }
 
@@ -189,6 +205,7 @@ namespace ShopingList.Component
                 }
                 this.mainData.ReadFromFile(list);
                 UpdateListList();
+                this.Komunikat.Text = "Wczytano liste";
             }
             else
             {

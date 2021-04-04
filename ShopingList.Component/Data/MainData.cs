@@ -38,6 +38,24 @@ namespace ShopingList.Component
             return this.lang;
         }
 
+        public List<string> GetAllCategory()
+        {
+            var listOfCategoryName = new List<string>();
+
+            foreach (var item in this.StorageOfProductList)
+            {
+                foreach(var item2 in item.ListOfProduct)
+                {
+                    if(!listOfCategoryName.Contains(item2.Category))
+                    {
+                        listOfCategoryName.Add(item2.Category);
+                    }
+                }
+            }
+
+            return listOfCategoryName;
+        }
+
         private Language PolishText()
         {
             var lang = new Language();
