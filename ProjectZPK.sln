@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingList", "ShopingList\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingList.Component", "ShopingList.Component\ShopingList.Component.csproj", "{F9662E4A-2BB5-4992-BEDA-B965FEEAD0A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaZyczen", "ListaZyczen\ListaZyczen.csproj", "{A41D3481-88D9-4360-8364-4CE55EE2496C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F9662E4A-2BB5-4992-BEDA-B965FEEAD0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9662E4A-2BB5-4992-BEDA-B965FEEAD0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9662E4A-2BB5-4992-BEDA-B965FEEAD0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41D3481-88D9-4360-8364-4CE55EE2496C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41D3481-88D9-4360-8364-4CE55EE2496C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41D3481-88D9-4360-8364-4CE55EE2496C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41D3481-88D9-4360-8364-4CE55EE2496C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
