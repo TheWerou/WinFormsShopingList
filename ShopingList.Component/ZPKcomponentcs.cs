@@ -74,11 +74,13 @@ namespace ShopingList.Component
             {
                 this.ListProd.Items.Add($"Nazwa {item.Name} Category: {item.Category}", item.isChecked);
             }
+            this.RefreshCategoryList();
         }
 
         private void UpdateListOfCategory(List<string> listOfCategories)
         {
             this.CategryList.Items.Clear();
+            this.CategryList.Items.Add($" Brak ");
             foreach (var item in listOfCategories)
             {
                 this.CategryList.Items.Add($" {item} ");
@@ -115,10 +117,17 @@ namespace ShopingList.Component
                 this.mainData.StorageOfProductList[output].AddToProductToList(name,category);
                 UpdateProductList(this.mainData.StorageOfProductList[output]);
             }
+            this.RefreshCategoryList();
 
-            var listOfCategories = this.mainData.GetAllCategory();
-            UpdateListOfCategory(listOfCategories);
+
             this.Komunikat.Text = "Dodano produkt do listy";
+        }
+
+        private void RefreshCategoryList()
+        {
+            var heleper = this.mainData.StorageOfProductList[this.ListList.SelectedIndex];
+            var output2 = this.mainData.GetAllCategorysFromListOfProducts(heleper);
+            this.UpdateListOfCategory(output2);
         }
 
         private void DeleteBut_Click(object sender, EventArgs e)
@@ -236,7 +245,6 @@ namespace ShopingList.Component
 
         public ShopingElement GetNextElement()
         {
-
             try
             {
                 var output = this.ListList.SelectedIndex;
@@ -277,6 +285,36 @@ namespace ShopingList.Component
                 this.ListProd.Items.Clear();
             }
             return GetNextElement();
+        }
+
+        private void hehe()
+        {
+            var index = this.CategryList.SelectedIndex;
+            this.RefreshCategoryList();
+            var heleper = this.mainData.StorageOfProductList[this.ListList.SelectedIndex];
+            
+            this.ListProd.Items.Clear();
+
+            if (this.CategryList.Items.Count > 1 && index != 0)
+            {
+                var output2 = this.mainData.GetAllCategorysFromListOfProducts(heleper);
+
+                var listToSearch = heleper.ListOfProduct.FindAll(c => c.Category == output2[index - 1]);
+                foreach (var item in listToSearch)
+                {
+                    this.ListProd.Items.Add($"Nazwa {item.Name} Category: {item.Category}", item.isChecked);
+                }
+
+            }
+            else
+            {
+                this.UpdateProductList(this.mainData.StorageOfProductList[this.ListList.SelectedIndex]);
+            }
+        }
+
+        private void CategryList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.hehe();
         }
     }
 }

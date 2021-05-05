@@ -28,6 +28,8 @@ namespace ShopingList.Component
 
         List<string> GetAllCategory();
 
+        List<string> GetAllCategorysFromListOfProducts(ListOfProducts listOfProducts);
+
         IEnumerable<string> PrepToSave();
     }
 }

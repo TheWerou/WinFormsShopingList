@@ -56,6 +56,21 @@ namespace ShopingList.Component
             return listOfCategoryName;
         }
 
+        public List<string> GetAllCategorysFromListOfProducts(ListOfProducts listOfProducts)
+        {
+            var listOfCategoryName = new List<string>();
+
+            foreach(var item in listOfProducts.ListOfProduct)
+            {
+                if (!listOfCategoryName.Contains(item.Category))
+                {
+                    listOfCategoryName.Add(item.Category);
+                }
+            }
+
+            return listOfCategoryName;
+        }
+
         private Language PolishText()
         {
             var lang = new Language();
