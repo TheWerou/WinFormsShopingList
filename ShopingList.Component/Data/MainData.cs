@@ -86,6 +86,8 @@ namespace ShopingList.Component
             lang.List_del_btn = "Usuń listę";
             lang.Load_list_btn = "Wczytaj listy";
             lang.Save_list_btn = "Zapisz listy do pliku";
+            lang.Base_message = "Miłego dnia";
+            lang.Descrp_List_of_product = "Tu pokaże się opis twojej cudownej listy";
             return lang;
         }
 

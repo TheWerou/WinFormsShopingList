@@ -18,7 +18,7 @@ namespace ShopingList
             InitializeComponent();
         }
 
-        private Language PolishText()
+        private Language EnglishText()
         {
             var lang = new Language();
             lang.Progress_label = "Progress of list";
@@ -33,6 +33,8 @@ namespace ShopingList
             lang.List_del_btn = "Delete list";
             lang.Load_list_btn = "Load lists";
             lang.Save_list_btn = "Save lists to file";
+            lang.Base_message = "Have a great day";
+            lang.Descrp_List_of_product = "Here is your awesome list description";
             return lang;
         }
 
@@ -43,7 +45,7 @@ namespace ShopingList
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.zpKcomponentcs1.Change_Language(PolishText());
+            this.zpKcomponentcs1.Change_Language(EnglishText());
         }
 
         private void button2_Click(object sender, EventArgs e)

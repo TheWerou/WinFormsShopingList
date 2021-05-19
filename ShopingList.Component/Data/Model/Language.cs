@@ -20,6 +20,10 @@ namespace ShopingList.Component.Data.Model
         public string List_del_btn { get; set; }
         public string Load_list_btn { get; set; }
         public string Save_list_btn { get; set; }
+        public string Descrp_List_of_product { get; set; }
+        public string Base_message { get; set; }
+
+
 
     }
 }

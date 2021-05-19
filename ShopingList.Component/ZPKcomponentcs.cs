@@ -26,10 +26,8 @@ namespace ShopingList.Component
             this.mainData = new MainData();
             this.lang = this.mainData.lang;
             Rewrite_Language();
-            this.Komunikat.Text = "Miłego dnia";
-            this.DescriptionText.Text = "Tu pokaże się opis twojej cudownej listy";
         }
-
+        
         public void Change_Language(Language lang)
         {
             this.lang = lang;
@@ -114,18 +112,26 @@ namespace ShopingList.Component
             var output = this.ListList.SelectedIndex;
             if (output >= 0)
             {
-                this.mainData.StorageOfProductList[output].AddToProductToList(name,category);
+                this.mainData.StorageOfProductList[output].AddToProductToList(name, category);
                 UpdateProductList(this.mainData.StorageOfProductList[output]);
             }
             this.RefreshCategoryList();
-
 
             this.Komunikat.Text = "Dodano produkt do listy";
         }
 
         private void RefreshCategoryList()
         {
-            var heleper = this.mainData.StorageOfProductList[this.ListList.SelectedIndex];
+            int index;
+            if (this.ListList.SelectedIndex != -1)
+            {
+                index = this.ListList.SelectedIndex;
+            }
+            else
+            {
+                index = 0;
+            }
+            var heleper = this.mainData.StorageOfProductList[index];
             var output2 = this.mainData.GetAllCategorysFromListOfProducts(heleper);
             this.UpdateListOfCategory(output2);
         }
@@ -136,7 +142,7 @@ namespace ShopingList.Component
             var output2 = this.ListProd.SelectedIndex;
             if (output >= 0)
             {
-                if(output2 >= 0)
+                if (output2 >= 0)
                 {
                     var listFromDelete = this.mainData.StorageOfProductList[output];
                     listFromDelete.DeleteProductFromList(listFromDelete.ListOfProduct[output2]);
@@ -160,7 +166,7 @@ namespace ShopingList.Component
             {
                 UpdateProductList(this.mainData.StorageOfProductList[0]);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 this.ListProd.Items.Clear();
             }
@@ -181,7 +187,7 @@ namespace ShopingList.Component
         private void SaveList_Click(object sender, EventArgs e)
         {
             this.SaverData.ShowDialog();
-            
+
         }
 
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -190,7 +196,7 @@ namespace ShopingList.Component
 
             using (StreamWriter writetext = new StreamWriter(this.SaverData.FileName))
             {
-                foreach(var item in jsonToSave)
+                foreach (var item in jsonToSave)
                 {
                     writetext.WriteLine(item);
                 }
@@ -210,7 +216,7 @@ namespace ShopingList.Component
                     {
                         list.Add(readtext.ReadLine());
                     }
-                    
+
                 }
                 this.mainData.ReadFromFile(list);
                 UpdateListList();
@@ -223,7 +229,7 @@ namespace ShopingList.Component
         }
         private void LoaderData_FileOk(object sender, CancelEventArgs e)
         {
-            
+
 
         }
         private void Rewrite_Language()
@@ -240,6 +246,8 @@ namespace ShopingList.Component
             DeleteButList.Text = lang.List_del_btn;
             LoadList.Text = lang.Load_list_btn;
             SaveList.Text = lang.Save_list_btn;
+            Komunikat.Text = lang.Descrp_List_of_product;
+            DescriptionText.Text = lang.Base_message;
         }
 
 
@@ -254,7 +262,7 @@ namespace ShopingList.Component
                 RefreshListProd();
                 return this.viewElement;
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return this.viewElement;
             }
@@ -273,9 +281,9 @@ namespace ShopingList.Component
         }
 
         public ShopingElement AccepctElement()
-        { 
+        {
             this.mainData.StorageOfProductList[this.ListList.SelectedIndex].ListOfProduct[this.itemPosition].isChecked = true;
-            
+
             try
             {
                 UpdateProductList(this.mainData.StorageOfProductList[0]);
@@ -287,12 +295,13 @@ namespace ShopingList.Component
             return GetNextElement();
         }
 
-        private void hehe()
+
+        private void SortListProd()
         {
             var index = this.CategryList.SelectedIndex;
             this.RefreshCategoryList();
             var heleper = this.mainData.StorageOfProductList[this.ListList.SelectedIndex];
-            
+
             this.ListProd.Items.Clear();
 
             if (this.CategryList.Items.Count > 1 && index != 0)
@@ -314,7 +323,7 @@ namespace ShopingList.Component
 
         private void CategryList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.hehe();
+            this.SortListProd();
         }
     }
 }

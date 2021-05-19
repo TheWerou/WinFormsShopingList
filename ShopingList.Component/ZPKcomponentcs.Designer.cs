@@ -283,9 +283,6 @@ namespace ShopingList.Component
             this.CategryList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CategryList.FormattingEnabled = true;
             this.CategryList.ItemHeight = 16;
-            this.CategryList.Items.AddRange(new object[] {
-            "Lista kategori po klikniecu mozna ",
-            "je sortowąć (Do zrobienia)"});
             this.CategryList.Location = new System.Drawing.Point(3, 27);
             this.CategryList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CategryList.Name = "CategryList";
